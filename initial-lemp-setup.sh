@@ -30,7 +30,7 @@ cd /etc/nginx
 	#HOST=`hostname`
 	#sed -i "s/HOSTNAME/$HOST/" /etc/nginx/nginx.conf
 
-service php-fpm start
+service php-fpm restart
 chkconfig php-fpm on
-service nginx start
+service nginx restart
 chkconfig nginx on
